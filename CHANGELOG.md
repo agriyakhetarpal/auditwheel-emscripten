@@ -7,12 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-### [0.2.2] - 2026/02/02
+### [0.2.3] - 2026/02/02
 
 ### Fixed
 
-- Fixed an issue where `auditwheel show` command always fails after 0.2.1 release.
+- Fixed an issue where `auditwheel show` command always fails after 0.2.2 release.
   ([#52](https://github.com/pyodide/auditwheel-emscripten/pull/52))
+
+### [0.2.2] - 2026/01/27
+
+### Changed
+
+- Replaced typer with click.
+  ([#50](https://github.com/pyodide/auditwheel-emscripten/pull/50))
 
 ### [0.2.1] - 2025/12/16
 
