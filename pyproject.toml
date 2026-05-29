@@ -20,8 +20,8 @@ dependencies = [
     "pyodide-cli>=0.4",
     "wheel",
 ]
-license.file = "LICENSE"
-
+license = "MPL-2.0"
+license-files = ["LICENSE"]
 
 [dependency-groups]
 test = ["pytest"]
