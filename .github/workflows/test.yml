@@ -14,7 +14,11 @@ concurrency:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    name: Run tests on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
     permissions:
       contents: read
     steps:
