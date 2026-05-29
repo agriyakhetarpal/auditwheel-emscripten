@@ -22,11 +22,9 @@ dependencies = [
 ]
 license.file = "LICENSE"
 
-[project.optional-dependencies]
-test = [
-  "pytest",
-]
 
+[dependency-groups]
+test = ["pytest"]
 
 [project.urls]
 Home = "https://github.com/pyodide/auditwheel-emscripten"
