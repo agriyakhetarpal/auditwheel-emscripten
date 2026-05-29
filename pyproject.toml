@@ -4,7 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "auditwheel_emscripten"
-authors = [{name = "Gyeongjae Choi", email = "def6488@gmail.com"}]
+authors = [{ name = "Gyeongjae Choi", email = "def6488@gmail.com" }]
+maintainers = [
+  { name = "Gyeongjae Choi", email = "def6488@gmail.com" },
+  { name = "Robert Hood Chatham", email = "roberthoodchatham@gmail.com" },
+  { name = "Agriya Khetarpal", email = "agriyakhetarpal@outlook.com" },
+]
 readme = "README.md"
 description = "auditwheel-like tool for Pyodide"
 dynamic = ["version"]
