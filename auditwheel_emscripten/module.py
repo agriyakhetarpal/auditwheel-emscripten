@@ -129,7 +129,7 @@ class ModuleWritable(webassembly.Module):
     def patch_runtime_path(self, runtime_path: Path) -> bytes:
         curfile = Path(self.filename).resolve()
 
-        relpath = os.path.relpath(runtime_path, curfile.parent)
+        relpath = os.path.relpath(Path(runtime_path).resolve(), curfile.parent)
         if relpath == ".":
             realpath_with_prefix = "$ORIGIN"
         else:
